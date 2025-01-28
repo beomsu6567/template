@@ -1,7 +1,6 @@
 @charset "UTF-8";
-@use 'utility' as *;
-@use 'settings' as *;
-
+@use "utility" as *;
+@use "settings" as *;
 
 *,
 ::before,
@@ -17,7 +16,7 @@
   letter-spacing: $base-ls;
   scroll-margin-top: $header-height;
 
-  @media only screen and (max-width:$screen-tb) {
+  @media only screen and (max-width: $screen-tb) {
     scroll-margin-top: $header-height-tb;
   }
 }
@@ -31,7 +30,7 @@
 
 html {
   font: {
-    size: 62.5%
+    size: 62.5%;
   }
 
   font-family: sans-serif;
@@ -49,7 +48,7 @@ body {
   font-family: $base-f-family;
   font-weight: $base-f-weight;
 
-  @media only screen and (max-width:$screen-tb) {
+  @media only screen and (max-width: $screen-tb) {
     font-size: $base-f-size-tb;
   }
 }
@@ -86,7 +85,6 @@ img {
   vertical-align: bottom;
   max-width: 100%;
 }
-
 
 li {
   list-style-type: none;
@@ -142,7 +140,6 @@ a {
 }
 
 .float {
-
   &:before,
   &:after {
     content: " ";
@@ -163,26 +160,25 @@ a {
     float: right !important;
   }
 
-
   @media only screen and (max-width: $screen-tb) {
-    &>.left-box {
+    & > .left-box {
       float: none !important;
       width: 100% !important;
     }
 
-    &>.right-box {
+    & > .right-box {
       float: none !important;
       width: 100% !important;
     }
   }
 
   @media only screen and (max-width: $screen-sp) {
-    &>.left-sp {
+    & > .left-sp {
       float: none !important;
       width: 100% !important;
     }
 
-    &>.right-sp {
+    & > .right-sp {
       float: none !important;
       width: 100% !important;
     }
@@ -233,7 +229,7 @@ a {
 .hover-all {
   position: relative;
 
-  >a {
+  > a {
     display: block;
     height: 100%;
     width: 100%;
